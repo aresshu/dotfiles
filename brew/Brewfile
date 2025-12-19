@@ -13,6 +13,7 @@ brew "neovim"
 # macOS Enviroment
 cask "font-hack-nerd-font"
 cask "nikitabobko/tap/aerospace"
+cask "linearmouse"
 
 # Applications
 cask "ghostty"

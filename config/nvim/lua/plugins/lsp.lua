@@ -17,6 +17,7 @@ local lsp_opts = {
     "lua_ls",
     "ts_ls",
     "rust_analyzer",
+    "clangd",
 
     -- Frameworks
     "astro",
@@ -56,6 +57,13 @@ local lsp_opts = {
             },
           },
         },
+      }
+    end,
+
+    -- C++
+    ["clangd"] = function()
+      require("lspconfig").clangd.setup {
+        capabilities = capabilities,
       }
     end,
 
