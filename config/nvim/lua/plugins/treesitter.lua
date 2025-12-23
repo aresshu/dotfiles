@@ -9,6 +9,7 @@ local opts = {
     "sql",
     "rust",
     "cpp",
+    "python",
 
     -- Frameworks
     "svelte",

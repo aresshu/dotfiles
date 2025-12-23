@@ -18,6 +18,7 @@ local lsp_opts = {
     "ts_ls",
     "rust_analyzer",
     "clangd",
+    "pyright",
 
     -- Frameworks
     "astro",
@@ -63,6 +64,13 @@ local lsp_opts = {
     -- C++
     ["clangd"] = function()
       require("lspconfig").clangd.setup {
+        capabilities = capabilities,
+      }
+    end,
+    
+    -- Python
+    ["pyright"] = function()
+      require("lspconfig").pyright.setup {
         capabilities = capabilities,
       }
     end,
