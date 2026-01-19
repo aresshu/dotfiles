@@ -19,16 +19,17 @@ local lsp_opts = {
     "rust_analyzer",
     "clangd",
     "pyright",
-
     -- Frameworks
     "astro",
     "svelte",
     "cssls",
+    -- DevOps
+    "terraformls",
   },
   automatic_installation = true,
   handlers = {
     function (server_name)
-      require("lspconfig")[server_name].setup{capabilities}
+      require("lspconfig")[server_name].setup{capabilities = capabilities}
     end,
 
     -- Lua
@@ -71,6 +72,13 @@ local lsp_opts = {
     -- Python
     ["pyright"] = function()
       require("lspconfig").pyright.setup {
+        capabilities = capabilities,
+      }
+    end,
+
+    -- Terraform
+    ["terraformls"] = function()
+      require("lspconfig").terraformls.setup{
         capabilities = capabilities,
       }
     end,

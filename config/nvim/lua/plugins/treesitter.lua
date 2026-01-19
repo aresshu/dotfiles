@@ -14,6 +14,9 @@ local opts = {
     -- Frameworks
     "svelte",
     "astro",
+
+    -- DevOps
+    "terraform",
   },
   indent = { enable = true },
 }
