@@ -1,0 +1,13 @@
+theme = "autumn"
+
+[editor]
+line-number = "relative"
+cursorline = true
+auto-completion = true
+auto-format = true
+mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
