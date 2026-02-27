@@ -1,4 +1,5 @@
-theme = "autumn"
+# theme = "autumn"
+theme = "keyb1nd"
 
 [editor]
 line-number = "relative"
@@ -11,3 +12,10 @@ mouse = false
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.lsp]
+enable = true
+display-messages = true
+display-inlay-hints = false
+snippets = true
+

@@ -10,14 +10,14 @@ cursor-style = block
 cursor-style-blink = true
 
 #Background
-#background-blur-radius = 5
-#background-opacity = 0.9
+background-blur-radius = 5
+background-opacity = 0.87
 
 # Hide macos-titlebar
 macos-titlebar-style = hidden
 
 # Theme - will find one eventually
-theme = N0Tch2k
+theme = Black Metal (Mayhem)
 
 # Window Padding
 window-padding-x = 10
